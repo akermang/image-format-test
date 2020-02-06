@@ -15,19 +15,43 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    font-size: 60px;
+    height: 100%;
+    padding: 0;
+  }
+  p,
+  div,
+  span {
+    font-size: 24px;
+    padding: 0 1em;
+  }
+  button {
+    border: navajowhite;
+    margin: 0 10%;
+    width: 80%;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 7px;
   }
   </style>
 
 </head>
 
 <body>
-    png
-    <img src="./assets/group-44.png" alt="group-44.png">
-    <img src="./assets/group-44@2x.png" alt="group-44@2x.png">
-    <img src="./assets/group-44@3x.png" alt="group-44@3x.png">
-    svg
-    <img src="./assets/group-44.svg" alt="group-44.svg">
+   <div>
+      <p>Click the button to display this frame's height and width.</p>
+      <button onclick="getSize()">What's my size?</button> 
+     <p id="size"></p>
+     <span> png</span>
+     <img src="./assets/group-44.png" alt="group-44.png">
+      <img src="./assets/group-44@2x.png" alt="group-44@2x.png">
+      <img src="./assets/group-44@3x.png" alt="group-44@3x.png">
+   </div>
+    <div>
+      <span>svg</span>
+      <img src="./assets/group-44.svg" alt="group-44.svg">
+    </div>
+   
   <script src="js/scripts.js"></script>
 </body>
 </html>
